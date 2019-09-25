@@ -126,6 +126,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.middle-alignment {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+.h2-style {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.middle-context {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -133,6 +152,7 @@ table {
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 nav {
   display: flex;
@@ -150,22 +170,27 @@ nav a {
 .header {
   display: flex;
   background: lightgray;
+  margin-bottom: 3%;
+}
+.header img {
+  width: 16%;
 }
 .header .aboutMe {
   display: flex;
   flex-wrap: wrap;
   font-family: Georgia;
   color: #19c8eb;
-  line-height: 1.5rem;
   padding: 2%;
 }
 .header .aboutMe h1 {
   font-size: 2.8rem;
   margin-bottom: 3%;
+  font-family: Georgia;
 }
 .header .aboutMe p {
   color: rgba(5, 5, 5, 0.904);
   margin-bottom: 3%;
+  font-family: Georgia;
 }
 .header .aboutMe button {
   font-family: Georgia;
@@ -179,12 +204,65 @@ nav a {
 .top-middle-border {
   width: 100%;
   display: flex;
-  flex-direction: flex-start;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  border: 1px solid black;
 }
 .top-middle-border .introduction {
-  width: 50%;
+  width: 100%;
+  height: 200px;
   display: flex;
-  flex-direction: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+.top-middle-border .introduction h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.top-middle-border .introduction p {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
+.top-middle-border .skills {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+.top-middle-border .skills .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 20%;
+  height: 170px;
+}
+.top-middle-border .skills h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.top-middle-border .skills ul {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
+.work-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid green;
+  height: 200px;
+}
+.work-history h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
 }

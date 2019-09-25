@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    background: lightgray;
+    margin-bottom: 3%;
+    img {
+        width: 16%;
+    }
+    .aboutMe {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: @fonttext;
+        color: @headercolor;
+        padding: 2%;
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 3%;
+            font-family: @fonttext;
+        }
+        p {
+                color: @contextcolor;
+                margin-bottom: 3%;
+                font-family: @fonttext;
+            }
+        button {
+            font-family: @fonttext;
+            color: @contextcolor;
+            font-size: 0.8rem;
+            border: 1px solid black;
+            border-radius: 7%;
+            height: 30px;
+            width: 8%;
+        
+        }
+    }
+}
+
+.top-middle-border {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    .introduction {
+        .middle-alignment();
+        h2 {
+            .h2-style();
+        }
+        p {
+            .middle-context();
+        }
+    }
+    .skills {
+        .middle-alignment();
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 20%;
+            height: 170px;
+        }
+        h2 {
+            .h2-style();
+        }
+        ul {
+            .middle-context();
+        }
+    }
+}
+
+.work-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+    height: 200px;
+    h2 {
+        .h2-style();
+    }
+    .table {
+        .middle-content();
+        tr {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
