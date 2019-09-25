@@ -134,3 +134,57 @@ html,
 body {
   height: 100%;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+nav a {
+  font-family: Georgia;
+  color: rgba(5, 5, 5, 0.904);
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  background: lightgray;
+}
+.header .aboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Georgia;
+  color: #19c8eb;
+  line-height: 1.5rem;
+  padding: 2%;
+}
+.header .aboutMe h1 {
+  font-size: 2.8rem;
+  margin-bottom: 3%;
+}
+.header .aboutMe p {
+  color: rgba(5, 5, 5, 0.904);
+  margin-bottom: 3%;
+}
+.header .aboutMe button {
+  font-family: Georgia;
+  color: rgba(5, 5, 5, 0.904);
+  font-size: 0.8rem;
+  border: 1px solid black;
+  border-radius: 7%;
+  height: 30px;
+  width: 8%;
+}
+.top-middle-border {
+  width: 100%;
+  display: flex;
+  flex-direction: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-middle-border .introduction {
+  width: 50%;
+  display: flex;
+  flex-direction: flex-start;
+}

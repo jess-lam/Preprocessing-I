@@ -57,3 +57,67 @@ html, body {
 	height: 100%;
 }
 
+@headercolor:rgb(25, 200, 235);
+@contextcolor: rgba(5, 5, 5, 0.904);
+@fonttext: Georgia;
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	border: 2px solid black;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	a {
+		font-family: @fonttext;
+		color: @contextcolor;
+		text-decoration: none;
+	}
+}
+
+.header {
+	display: flex;
+	background: lightgray;
+	.aboutMe {
+		display: flex;
+		flex-wrap: wrap;
+		font-family: @fonttext;
+		color: @headercolor;
+		line-height: 1.5rem;
+		padding: 2%;
+		h1 {
+			font-size: 2.8rem;
+			margin-bottom: 3%;
+		}
+		p {
+				color: @contextcolor;
+				margin-bottom: 3%;
+			}
+		button {
+			font-family: @fonttext;
+			color: @contextcolor;
+			font-size: 0.8rem;
+			border: 1px solid black;
+			border-radius: 7%;
+			height: 30px;
+			width: 8%;
+		
+		}
+	}
+}
+
+.top-middle-border {
+	width: 100%;
+	display: flex;
+	flex-direction: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	.introduction {
+		width: 50%;
+		display: flex;
+		flex-direction: flex-start;
+	}
+}
+
+
+
