@@ -39,9 +39,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
     .introduction {
-        .middle-alignment();
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid blue;
+
         h2 {
             .h2-style();
         }
@@ -50,76 +53,41 @@
         }
     }
     .skills {
-        .middle-alignment();
-        .content {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            border: 1px solid black;
-            width: 20%;
-            height: 170px;
-        }
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid green;
         h2 {
             .h2-style();
         }
-        ul {
+        ul li{
             .middle-context();
         }
     }
 }
 
-/*.work-history {
+.work-history {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    border: 1px solid green;
-    height: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
     h2 {
         .h2-style();
-    }*/
-    /*.table-border {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        .table {
-            display: flex;
-            flex-direction: colunn;
-            align-items: center;
-            width: 100%;
-            margin: 0 auto;
-            border: 1px solid blue;
-            tr {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-evenly
-            }
-        }
     }
-}*/
-    .work-history {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        h2 {
-            .h2-style();
-        }
-        table {
-            width: 50%;
-            height: 100px;
+    table {
+        width: 50%;
+        height: 100px;
+        border: 1px solid black;
+        th {
+            text-align: center;
             border: 1px solid black;
-            th {
-                text-align: center;
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-            td {
-                border: 1px solid black;
-                border-collapse: collapse;
-                text-align: center;
-            }
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
         }
     }
+}
