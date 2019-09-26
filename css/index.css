@@ -206,12 +206,12 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 3%;
 }
 .top-middle-border .introduction {
   width: 48%;
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
 }
 .top-middle-border .introduction h2 {
   font-size: 2rem;
@@ -227,7 +227,6 @@ nav a {
   width: 48%;
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
 }
 .top-middle-border .skills h2 {
   font-size: 2rem;
@@ -243,8 +242,10 @@ nav a {
   width: 100%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
+  background: lightgray;
+  margin-bottom: 3%;
 }
 .work-history h2 {
   font-size: 2rem;
@@ -252,7 +253,7 @@ nav a {
   margin-bottom: 3%;
 }
 .work-history table {
-  width: 50%;
+  width: 90%;
   height: 100px;
   border: 1px solid black;
 }
@@ -265,4 +266,19 @@ nav a {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.contact p {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
 }
