@@ -146,6 +146,11 @@ table {
   border: 1px solid black;
   border-collapse: collapse;
 }
+.context-viewport {
+  font-size: 1.5rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -163,23 +168,61 @@ nav {
   width: 100%;
   height: 80px;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    border: 1px none white;
+  }
+}
 nav a {
   font-family: Georgia;
   color: rgba(5, 5, 5, 0.904);
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-family: Georgia;
+    color: rgba(5, 5, 5, 0.904);
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
 }
 .header {
   display: flex;
   background: lightgray;
   margin-bottom: 3%;
 }
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 800px;
+  }
+}
 .header img {
   width: 16%;
+}
+@media (max-width: 500px) {
+  .header img {
+    width: 80%;
+  }
 }
 .header .aboutMe {
   display: flex;
   flex-wrap: wrap;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .header .aboutMe {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .header .aboutMe h1 {
   font-size: 2.8rem;
@@ -187,10 +230,23 @@ nav a {
   color: #19c8eb;
   font-family: Georgia;
 }
+@media (max-width: 500px) {
+  .header .aboutMe h1 {
+    font-size: 2.2rem;
+  }
+}
 .header .aboutMe p {
   font-size: 1rem;
   color: rgba(5, 5, 5, 0.904);
   font-family: Georgia;
+}
+@media (max-width: 500px) {
+  .header .aboutMe p {
+    font-size: 1.5rem;
+    color: rgba(5, 5, 5, 0.904);
+    font-family: Georgia;
+    margin-bottom: 10%;
+  }
 }
 .header .aboutMe button {
   font-family: Georgia;
@@ -200,6 +256,13 @@ nav a {
   border-radius: 7%;
   height: 30px;
   width: 8%;
+}
+@media (max-width: 500px) {
+  .header .aboutMe button {
+    font-size: 1.3rem;
+    width: 40%;
+    height: 60px;
+  }
 }
 .top-middle-border {
   width: 100%;
@@ -271,6 +334,7 @@ nav a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 3%;
 }
 .contact h2 {
   font-size: 2rem;

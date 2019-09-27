@@ -2,21 +2,41 @@
     display: flex;
     background: lightgray;
     margin-bottom: 3%;
+    @media (max-width: 500px) {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 800px;
+    }
     img {
         width: 16%;
+        @media (max-width: 500px) {
+            width: 80%;
+        }
     }
     .aboutMe {
         display: flex;
         flex-wrap: wrap;
         padding: 2%;
+        @media (max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+        }
         h1 {
             font-size: 2.8rem;
             margin-bottom: 3%;
             color: @headercolor;
             font-family: @fonttext;
+            @media (max-width: 500px) {
+                font-size: 2.2rem;
+            }
         }
         p {
                 .context();
+                @media (max-width: 500px) {
+                    .context-viewport();
+                    margin-bottom: 10%;
+                }
             }
         button {
             font-family: @fonttext;
@@ -26,7 +46,11 @@
             border-radius: 7%;
             height: 30px;
             width: 8%;
-        
+            @media (max-width: 500px) {
+                font-size: 1.3rem;
+                width: 40%;
+                height: 60px;
+            }
         }
     }
 }
@@ -85,6 +109,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 3%;
     h2 {
         .h2();
     }
