@@ -126,24 +126,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.middle-alignment {
-  width: 100%;
-  height: 200px;
+.top-middle-content {
+  width: 48%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  border: 1px solid red;
+  flex-direction: column;
 }
-.h2-style {
+.h2 {
   font-size: 2rem;
   color: #19c8eb;
   margin-bottom: 3%;
 }
-.middle-context {
+.context {
   font-size: 1rem;
   color: rgba(5, 5, 5, 0.904);
   font-family: Georgia;
+}
+.table {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 /* Set every element's box-sizing to border-box */
 * {
@@ -178,18 +179,17 @@ nav a {
 .header .aboutMe {
   display: flex;
   flex-wrap: wrap;
-  font-family: Georgia;
-  color: #19c8eb;
   padding: 2%;
 }
 .header .aboutMe h1 {
   font-size: 2.8rem;
   margin-bottom: 3%;
+  color: #19c8eb;
   font-family: Georgia;
 }
 .header .aboutMe p {
+  font-size: 1rem;
   color: rgba(5, 5, 5, 0.904);
-  margin-bottom: 3%;
   font-family: Georgia;
 }
 .header .aboutMe button {
@@ -263,9 +263,9 @@ nav a {
   border-collapse: collapse;
 }
 .work-history table td {
+  text-align: center;
   border: 1px solid black;
   border-collapse: collapse;
-  text-align: center;
 }
 .contact {
   width: 100%;
@@ -281,4 +281,10 @@ nav a {
   font-size: 1rem;
   color: rgba(5, 5, 5, 0.904);
   font-family: Georgia;
+}
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
