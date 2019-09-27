@@ -271,10 +271,25 @@ nav a {
   align-items: center;
   margin-bottom: 3%;
 }
+@media (max-width: 500px) {
+  .top-middle-border {
+    height: 500px;
+    flex-wrap: wrap;
+  }
+}
 .top-middle-border .introduction {
   width: 48%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .top-middle-border .introduction {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .top-middle-border .introduction h2 {
   font-size: 2rem;
@@ -290,6 +305,17 @@ nav a {
   width: 48%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .top-middle-border .skills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: lightgray;
+    height: 250px;
+  }
 }
 .top-middle-border .skills h2 {
   font-size: 2rem;
