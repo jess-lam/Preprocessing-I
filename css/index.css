@@ -1,1 +1,380 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.top-middle-content {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+.h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.context {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
+.table {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.context-viewport {
+  font-size: 1.5rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    border: 1px none white;
+  }
+}
+nav a {
+  font-family: Georgia;
+  color: rgba(5, 5, 5, 0.904);
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-family: Georgia;
+    color: rgba(5, 5, 5, 0.904);
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
+.header {
+  display: flex;
+  background: lightgray;
+  margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 800px;
+  }
+}
+.header img {
+  width: 16%;
+}
+@media (max-width: 500px) {
+  .header img {
+    width: 80%;
+  }
+}
+.header .aboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .header .aboutMe {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header .aboutMe h1 {
+  font-size: 2.8rem;
+  margin-bottom: 3%;
+  color: #19c8eb;
+  font-family: Georgia;
+}
+@media (max-width: 500px) {
+  .header .aboutMe h1 {
+    font-size: 2.2rem;
+  }
+}
+.header .aboutMe p {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
+@media (max-width: 500px) {
+  .header .aboutMe p {
+    font-size: 1.5rem;
+    color: rgba(5, 5, 5, 0.904);
+    font-family: Georgia;
+    margin-bottom: 10%;
+  }
+}
+.header .aboutMe button {
+  font-family: Georgia;
+  color: rgba(5, 5, 5, 0.904);
+  font-size: 0.8rem;
+  border: 1px solid black;
+  border-radius: 7%;
+  height: 30px;
+  width: 8%;
+}
+@media (max-width: 500px) {
+  .header .aboutMe button {
+    font-size: 1.3rem;
+    width: 40%;
+    height: 60px;
+  }
+}
+.top-middle-border {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .top-middle-border {
+    height: 500px;
+    flex-wrap: wrap;
+  }
+}
+.top-middle-border .introduction {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .top-middle-border .introduction {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.top-middle-border .introduction h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.top-middle-border .introduction p {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
+.top-middle-border .skills {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .top-middle-border .skills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: lightgray;
+    height: 250px;
+  }
+}
+.top-middle-border .skills h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.top-middle-border .skills ul li {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
+.work-history {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: lightgray;
+  margin-bottom: 3%;
+}
+.work-history h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.work-history table {
+  width: 90%;
+  height: 100px;
+  border: 1px solid black;
+}
+.work-history table th {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.work-history table td {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+.contact h2 {
+  font-size: 2rem;
+  color: #19c8eb;
+  margin-bottom: 3%;
+}
+.contact p {
+  font-size: 1rem;
+  color: rgba(5, 5, 5, 0.904);
+  font-family: Georgia;
+}
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

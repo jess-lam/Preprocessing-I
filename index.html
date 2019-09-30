@@ -6,7 +6,9 @@
 
   <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +16,80 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <nav>
+    <a href="#">About Me</a>
+    <a href="#">Introduction</a>
+    <a href="#">Skills</a>
+    <a href="#">Work History</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section class="header">
+    <img src="images/Me.jpg" alt="Picture of me" />
+    <div class ="aboutMe">
+      <h1>Jessica Lam - Software Developer</h1>
+      <p>Hello! My name is Jessica Lam and I am a software developer based out of Santa Cruz, CA. I love to collaborate and help businesses build web applications and mobile apps. If you would like to collaborate, please contact me at the link below.</p>
+
+      <button>
+        Let's team up
+      </button>
+    </div>
+  </section>
+
+  <section class="top-middle-border">
+    <div class="introduction">
+      <h2>Cover Letter</h2>
+      <p>To whom it may concern,<br>I have worked in software enginnering for 5 years and am proficient in Javascript, Python, and React. I have a passion for developing software and thrive in a fast-paced environment where I can continue to grow as a developer. I also have great communication skills and am extremely organized, which allows me to efficiently work in team-oriented settings as well as on my own. My organizational skills help me prioritize projects and deadlines.</p>
+    </div>
+
+    <div class="skills">
+      <h2>Skills</h2>
+      <ul>
+          <li>Javascript</li>
+          <li>Python</li>
+          <li>React</li>
+          <li>NodeJS</li>
+          <li>Ruby on Rails</li>
+          <li>Html, CSS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="work-history">
+    <h2>Work History</h2>
+
+    <table>
+      <tr class="table">
+        <th>Years</th>
+        <th>Company</th>
+        <th>Title</th>
+      </tr>
+
+      <tr class="table">
+        <td>1</td>
+        <td>Apple</td>
+        <td>Software Engineer</td>
+      </tr>
+
+      <tr class="table">
+        <td>2</td>
+        <td>Microsoft</td>
+        <td>Front-end Developer</td>
+      </tr>
+
+      <tr class="table">
+        <td>3</td>
+        <td>Amazon</td>
+        <td>Dev Ops</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email:<a href="#">example@gmail.com</a></p>
+  </section>
 </body>
-</html>
+
+<footer>
+  <p>Copyright Lambda 2019</p>
+</footer>
